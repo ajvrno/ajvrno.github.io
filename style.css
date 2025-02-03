@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7F7;
+    font-family: 'Playfair Display', serif;;
+}   
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center .main-center {
+    text-align: justify;
+    font-size: large;
+
+}
