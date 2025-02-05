@@ -2,6 +2,10 @@
     font-family: 'Playfair Display', serif;;
 }   
 
+body {
+    background-color: #FFF7F7;
+}
+
 html {
     scroll-behavior: smooth;
 }   
@@ -10,7 +14,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF7F7;
 }
 
 .center {
@@ -28,11 +31,6 @@ img .circle {
     right: 30px;
     top: 20px;
 }
-
-img .star {
-    background: transparent;
-}
-
 footer {
     background-color: #FFF7F7;
 }
