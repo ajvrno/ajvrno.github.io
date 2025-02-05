@@ -20,12 +20,12 @@ html {
     width: 960px;
     height: 587px;
     position: relative;
-    padding: 50;
+    padding-top: 50;
     text-align: justify;
     font-size: 60px;
 }
 
-.center .circle {
+.center .circle {   
     position: absolute;
     z-index: 1;
     right: 30px;
