@@ -32,5 +32,6 @@ img .circle {
     top: 20px;
 }
 footer {
-    background-color: #FFF7F7;
+    display: flex;
+    justify-content: center;
 }
