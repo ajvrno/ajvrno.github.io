@@ -32,8 +32,6 @@ html {
 }
 
 .center .circle {
-    width: 10;
-    height: auto;
     position: absolute;
     z-index: 1;
     left: 30px;
