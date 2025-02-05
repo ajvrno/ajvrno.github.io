@@ -1,5 +1,6 @@
 * {
     font-family: 'Playfair Display', serif;
+    color: #333333;
 }   
 
 body {
@@ -14,23 +15,32 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 125px;
 }
+
 .center {
     width: 960px;
     height: 580px;
     position: relative;
-    padding-top: 50;
     text-align: justify;
     font-size: 60px;
 }
 .circle {   
     position: absolute;
     z-index: 1;
-    right: 30px;
-    top: 20px;
-    background: transparent;
+    right: 300px;
+    top: -50px;
+    transform: rotate(-2.5deg);
 }
-footer {
+a:hover {
+    color: #5D3E87;
+}
+
+a:active {
+    color: #A47CD8;
+}
+
+/**footer {
     display: flex;
     justify-content: center;
-}
+}**/
