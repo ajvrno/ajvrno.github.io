@@ -21,7 +21,6 @@ html {
 
 .star {
     position: absolute;
-    z-index: 1;
     left: 65px;
     top: 30px;
     transform: rotate(-90deg);
@@ -29,9 +28,8 @@ html {
 
 .stars {
     position: absolute;
-    z-index: 1;
-    right: 50px;
-    bottom: 15px;
+    right: 75px;
+    bottom: 35px;
 }
 
 .center {
