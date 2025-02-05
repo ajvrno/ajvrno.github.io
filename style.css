@@ -10,7 +10,23 @@ html {
     scroll-behavior: smooth;
 }
 
+.left .star {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    position: relative;
+}
+
 .center .center-pg {
     text-align: justify;
     font-size: large;
+}
+
+.center .circle {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
 }
