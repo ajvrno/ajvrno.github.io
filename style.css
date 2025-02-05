@@ -9,14 +9,12 @@ body {
 html {
     scroll-behavior: smooth;
 }   
-
-section .main {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-div .center {
+.center {
     width: 960px;
     height: 587px;
     position: relative;
@@ -24,7 +22,7 @@ div .center {
     text-align: justify;
     font-size: 60px;
 }
-img .circle {   
+.circle {   
     position: absolute;
     z-index: 1;
     right: 30px;
