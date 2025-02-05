@@ -18,9 +18,6 @@ html {
 .center {
     position: relative;
     padding: 50;
-}
-
-.center .center-pg {
     text-align: justify;
     font-size: x-large;
 }
