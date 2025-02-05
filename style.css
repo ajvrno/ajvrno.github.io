@@ -1,10 +1,11 @@
 * {
+    box-sizing: border-box;
     font-family: 'Playfair Display', serif;
     color: #333333;
 }   
 
 body {
-    background-color: #FFF7F7;
+    background-color: #FFF7F7;  
 }
 
 html {
@@ -56,7 +57,7 @@ a:active {
     color: #A47CD8;
 }
 
-/**footer {
+footer {
     display: flex;
     justify-content: center;
-}**/
+}
