@@ -16,21 +16,23 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 125px;
+    margin-top: 100px;
     position: relative;
 }
 
 .star {
     position: absolute;
-    left: 65px;
-    top: 30px;
+    left: 75px;
+    top: -85px;
     transform: rotate(-90deg);
+    flex-shrink: 0;
 }
 
 .stars {
     position: absolute;
     right: 75px;
     bottom: 35px;
+    flex-shrink: 0;
 }
 
 .center {
@@ -47,6 +49,23 @@ html {
     right: 300px;
     top: -50px;
     transform: rotate(-2.5deg);
+}
+
+.h-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.center-links {
+    font-size: 60px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
 }
 
 a:hover {
