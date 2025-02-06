@@ -55,38 +55,56 @@ html {
     transform: rotate(-2.5deg);
 }
 
+/**IPHONE SCREEN**/
 @media only screen and (max-width: 600px) {
     .main {
         display: flex;
         margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .center {
+        height: 225px;
         font-size: 20px;
     }
 
     .star {
         width: 75px;
-        left: -25px;
+        left: -10px;
         top: -65px;
     }
 
     .stars {
         width: 100px;
-        right: -15px;
-        bottom: 350px;
-        transform: rotate(35deg);
+        right: -10px;
+        bottom: -15px;
+        transform: rotate(30deg);
     }
 
     .circle {   
         width: 120px;
         height: auto;
         right: 30px;
-        top: -20px;
+        top: -18px;
         transform: rotate(-2.5deg);
     }
 
   }
+
+.h-stars {
+    width: 275px;
+    height: auto;
+    position: absolute;
+    top: -100px;
+    left: -20px;
+}
+
+.h-star {
+    width: 209px;
+    height: auto;
+    position: absolute;
+}
 
 .h-center {
     display: flex;
@@ -95,7 +113,10 @@ html {
 }
 
 .center-links {
+    display: flex;
+    flex-direction: row;
     font-size: 60px;
+    justify-content: space-between;
 }
 
 button {
