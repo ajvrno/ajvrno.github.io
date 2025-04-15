@@ -31,7 +31,7 @@ body {
 .index-center {
     text-align: justify;
     max-width: 960px;
-    margin: 2rem;
+    margin: 3rem;
     position: relative;
     z-index: 1;
 }
@@ -43,24 +43,17 @@ body {
 }
 
 .click-here {
+    font-size: 60px;
     font-style: italic;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.click-here:hover {
-    color: #5D3E87;
-}
-
-.click-here:active {
-    color: #A47CD8;
-}
-
 .star-top {
     position: absolute;
     top: -5px;
-    left: -65px;
+    left: -55px;
     width: clamp(60px, 15vw, 150px);
 }
 
@@ -104,8 +97,8 @@ footer {
     50% { border-color: #333333 }
 }
 
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
+/** MOBILE RESPONSIVENESS **/
+@media screen and (max-width: 992px) {
     .container {
         padding: 1.5rem;
         justify-content: flex-start;
@@ -113,41 +106,56 @@ footer {
     }
 
     .index-center {
-        margin: 1rem;
+        margin-top: 5rem;
     }
 
     .index-h1 {
         font-size: 40px;
     }
 
+    .click-here {
+        font-size: 40px;
+    }
+
     .star-top {
-        top: 2%;
-        left: 2%;
+        top: 35px;
+        left: 10px;
         width: clamp(50px, 12vw, 100px);
     }
 
     .star-bottom {
         bottom: 20%;
-        right: 2%;
+        right: 20px;
         width: clamp(70px, 15vw, 150px);
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .container {
         padding: 1rem;
     }
 
+    .index-center {
+        margin: 1em;
+    }
+
     .index-h1 {
+        font-size: 1.8em;
+    }
+
+    .click-here {
         font-size: 30px;
     }
 
     .star-top {
         width: 60px;
+        top: -15px;
+        left: -4px;
     }
 
     .star-bottom {
         width: 80px;
+        bottom: 50px;
     }
 } 
 
@@ -181,7 +189,7 @@ footer {
 }
 
 a {
-    font-size: 3.5rem;
+    font-size: 3.5em;
     font-style: italic;
     font-weight: 600;
     text-decoration: none;
@@ -216,22 +224,46 @@ footer {
     color: #333333;
 }
 
+@media screen and (max-width: 992px) {
+    .hstar-top {
+        width: 150px;
+        top: -25px;
+        left: -100px;
+    }
+
+    .hstar-bottom {
+        width: 115px;
+        bottom:-10px;
+        right: -90px;
+    }
+
+    .center-links {
+        margin-top: 8em;
+        gap: 2rem;
+    }
+
+    .center-links a {
+        font-size: 3.5em;
+    }   
+}
+
 
 /**IPHONE SCREEN - HOME **/
-@media only screen and (max-width: 768px) {
-    .h-left .stars {
-        width: 150px;
+@media screen and (max-width: 600px) {
+    .hstar-top {
+        width: 125px;
         top: 0;
         left: -10px;
     }
 
-    .h-right .star {
-        width: 100px;
+    .hstar-bottom {
+        width: 95px;
         bottom: 20px;
-        right: 1px;
+        right: 5px;
     }
 
     .center-links {
+        margin-top: 8em;
         gap: 2rem;
     }
 
