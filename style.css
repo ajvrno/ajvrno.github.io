@@ -10,7 +10,6 @@
 
 body {
     background-color: #FFF7F7;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -48,7 +47,7 @@ a:active {
 .index-center {
     text-align: justify;
     max-width: 960px;
-    margin-top: 175px;
+    margin-top: 5rem;
     z-index: 1;
 }
 
@@ -60,15 +59,15 @@ a:active {
 
 .star-top {
     position: absolute;
-    top: 6rem;
-    left: -3rem;
+    top: 1rem;
+    left: -5rem;
     width: clamp(100px, 15vw, 150px);
 }
 
 .star-bottom {
     position: absolute;
-    bottom: 15rem;
-    right: -5rem;
+    bottom: 1rem;
+    right: -7rem;
     width: clamp(90px, 20vw, 200px);
 }
 
@@ -107,23 +106,21 @@ footer {
 
 /** MOBILE RESPONSIVENESS **/
 @media screen and (max-width: 992px) {
-    .container {
-        padding: 1.5rem;
-        justify-content: flex-start;
-        margin-top: 2rem;
+    .index-h1 {     
+        font-size: 40px;
     }
 
-    .index-center {
-        margin-top: 5rem;
+    a {     
+        font-size: 40px;
     }
 
     .star-top {
-        top: 1rem;
-        left: -1rem;
+        top: 2rem;
+        left: -0.5rem;
     }
 
     .star-bottom {
-        bottom: 6rem;
+        bottom: 2.5rem;
         right: -1rem;
     }
 } 
@@ -147,12 +144,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
     gap: 2rem;
 }
 
 .nav-links {
     display: flex;
+    margin-top: 13rem;
     gap: 4rem;
 }
 
@@ -179,19 +176,19 @@ footer {
 /** HALF/TABLET SCREEN - HOME **/
 @media screen and (max-width: 992px) {
     .hstar-top {
-        width: 200px;
-        top: -1.5rem;
-        left: -7rem;
+        width: 125px;
+        top: 1rem;
+        left: -0.5rem;
     }
 
     .hstar-bottom {
-        width: 150px;
-        bottom:-1rem;
-        right: -6rem;
+        width: 100px;
+        bottom: -5rem;
+        right: -0.1rem;
     }
 
     .nav-links {
-        margin-top: 15rem;
+        margin-top: 12rem;
         gap: 2rem;
     }
 
