@@ -225,7 +225,6 @@ footer {
     padding: 2rem;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
 .project-card:hover {
@@ -345,5 +344,138 @@ footer {
 
     .bottom-nav a {
         font-size: 1rem;
+    }
+} 
+
+/********* ABOUT *********/
+.about-container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.profile-section {
+    flex: 0 0 400px;
+    position: relative;
+}
+
+.profile-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 5/6;
+    border-radius: 50% / 50%;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.floating-stars {
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    width: 120px;
+    z-index: 2;
+}
+
+.floating-stars img {
+    width: 100%;
+    height: auto;
+}
+
+.text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 5rem 0 2rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.name {
+    font-style: italic;
+}
+
+.description, .contact {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.contact a {
+    cursor: pointer;   
+}
+
+.highlight, .email {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* MOBILE RESPONSIVENESS - ABOUT PAGE */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .profile-section {
+        flex: 0 0 300px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        gap: 2rem;
+    }
+
+    .navigation a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        padding: 1rem;
+    }
+
+    .profile-section {
+        flex: 0 0 250px;
+        max-width: 250px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description, .contact {
+        font-size: 1.1rem;
+    }
+
+    .navigation {
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        font-size: 1.25rem;
     }
 } 

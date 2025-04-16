@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>ashley rabino</title>
+        <title>about | ashley rabino</title>
 
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" href="favicon.png">
@@ -11,15 +11,39 @@
         <script src = "js/home.js"></script>
     </head>
     <body>
-        <main>
-            <div>
+        <main class="about-container">
+            <div class="content-wrapper">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="/pictures/HEADSHOT.JPG" alt="profile placeholder" />
+                    </div>
+                    <div class="floating-stars">
+                        <img src="/pictures/transparent purple stars.png" alt="decorative stars" class="stars" />
+                    </div>
+                </div>
                 
+                <div class="text-section">
+                    <h1 class="title">hey, i'm <span class="name">ashley</span>!</h1>
+                    
+                    <p class="description">
+                        i'm a current junior computer science student at University of Maryland, Baltimore County. i'm a creatively driven and curious person and i'm always looking to challenge what i already know. my current areas of interest include <span class="highlight">front-end development</span> and <span class="highlight">cybersecurity</span>. beyond academics, i enjoy reading, watching films, and crocheting to keep my mind stimulated.
+                    </p>
+                    
+                    <p class="contact">
+                        if you'd like to learn more about me, feel free to explore my projects below, check out my <a class="contact" ="https://www.linkedin.com/in/ajvrabino/">linkedin</a>, or contact me at <span class="email">arabino1@umbc.edu</span>!
+                    </p>
+                </div>
             </div>
+
+            <nav class="bottom-nav">
+                <a href="home.html">home</a>
+                <a href="about.html" class="active">about</a>
+                <a href="experience.html">experience</a>
+            </nav>
         </main>
+
+        <footer>
+            <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small>
+        </footer>
     </body>
-        
-    <!-- COPYRIGHT -->
-    <footer>
-        <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small></footer>
-    </footer>
 </html>

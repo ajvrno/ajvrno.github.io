@@ -1,3 +1,3 @@
 # Personal Website - ajvrno.github.io
 
-## Using HTML and CSS
+## Using HTML, CSS, and JavaScript
