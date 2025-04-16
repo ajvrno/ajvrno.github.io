@@ -151,3 +151,164 @@ footer {
     font-size: 0.875rem;
     color: #333333;
 }
+
+/********* EXPERIENCE *********/
+.exp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+.exp-h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.my {
+    font-size: 4rem;
+}
+
+.experience {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    background-color: rgba(164, 124, 216, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(93, 62, 135, 0.5);
+}
+
+.card-content {
+    position: relative;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    padding-right: 40px;
+}
+
+.github-link {
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    transition: opacity 0.3s ease;
+}
+
+.github-link:hover {
+    opacity: 0.8;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 1.25rem;
+}
+
+.tech-stack {
+    font-size: 1rem;
+    padding: 1.25rem;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.bottom-nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.bottom-nav a:hover {
+    color: #5D3E87;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    .exp-container {
+        padding: 1.5rem;
+    }
+
+    .exp-h1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .my, .experience {
+        font-size: 3rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .bottom-nav {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .my, .experience {
+        font-size: 2.5rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .bottom-nav {
+        gap: 1.5rem;
+    }
+
+    .bottom-nav a {
+        font-size: 1rem;
+    }
+} 
