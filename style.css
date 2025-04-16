@@ -16,6 +16,23 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5D3E87;
+}
+
+a:active {
+    color: #A47CD8;
+}
+
+/********* INDEX *********/
 .container {
     display: flex;
     flex-direction: column;
@@ -31,8 +48,7 @@ body {
 .index-center {
     text-align: justify;
     max-width: 960px;
-    margin: 3rem;
-    position: relative;
+    margin-top: 175px;
     z-index: 1;
 }
 
@@ -42,26 +58,18 @@ body {
     font-weight: normal;
 }
 
-.click-here {
-    font-size: 60px;
-    font-style: italic;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
 .star-top {
     position: absolute;
-    top: -5px;
-    left: -55px;
-    width: clamp(60px, 15vw, 150px);
+    top: 6rem;
+    left: -3rem;
+    width: clamp(100px, 15vw, 150px);
 }
 
 .star-bottom {
     position: absolute;
-    bottom: 65px;
-    right: -75px;
-    width: clamp(80px, 20vw, 200px);
+    bottom: 15rem;
+    right: -5rem;
+    width: clamp(90px, 20vw, 200px);
 }
 
 .star-top img, .star-bottom img, .hstar-top img, .hstar-bottom img {
@@ -109,69 +117,29 @@ footer {
         margin-top: 5rem;
     }
 
-    .index-h1 {
-        font-size: 40px;
-    }
-
-    .click-here {
-        font-size: 40px;
-    }
-
     .star-top {
-        top: 35px;
-        left: 10px;
-        width: clamp(50px, 12vw, 100px);
+        top: 1rem;
+        left: -1rem;
     }
 
     .star-bottom {
-        bottom: 20%;
-        right: 20px;
-        width: clamp(70px, 15vw, 150px);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 1rem;
-    }
-
-    .index-center {
-        margin: 1em;
-    }
-
-    .index-h1 {
-        font-size: 1.8em;
-    }
-
-    .click-here {
-        font-size: 30px;
-    }
-
-    .star-top {
-        width: 60px;
-        top: -15px;
-        left: -4px;
-    }
-
-    .star-bottom {
-        width: 80px;
-        bottom: 50px;
+        bottom: 6rem;
+        right: -1rem;
     }
 } 
 
-/** HOME **/
-
+/********* HOME *********/
 .hstar-top {
     position: absolute;
-    top: -10px;
-    left: -475px;
+    top: 1rem;
+    left: -30rem;
     width: clamp(60px, 15vw, 250px);
 }
 
 .hstar-bottom {
     position: absolute;
-    bottom: -40px;
-    right: -450px;
+    bottom: -2.5rem;
+    right: -28rem;
     width: clamp(80px, 20vw, 200px);
 }
 
@@ -179,42 +147,26 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 5rem;
     gap: 2rem;
-}
-
-.center-links {
-    display: flex;
-    gap: 4rem;
-}
-
-a {
-    font-size: 3.5em;
-    font-style: italic;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #5D3E87;
-}
-
-a:active {
-    color: #A47CD8;
 }
 
 .nav-links {
     display: flex;
+    gap: 4rem;
+}
+
+.button-links {
+    display: flex;
     gap: 1.5rem;
 }
 
-.nav-links img {
+.button-links img {
     transition: opacity 0.3s ease;
 }
 
-.nav-links a:hover img {
-    opacity: 0.8;
+.button-links a:hover img {
+    opacity: 0.65;
 }
 
 footer {
@@ -224,50 +176,26 @@ footer {
     color: #333333;
 }
 
+/** HALF/TABLET SCREEN - HOME **/
 @media screen and (max-width: 992px) {
     .hstar-top {
-        width: 150px;
-        top: -25px;
-        left: -100px;
+        width: 200px;
+        top: -1.5rem;
+        left: -7rem;
     }
 
     .hstar-bottom {
-        width: 115px;
-        bottom:-10px;
-        right: -90px;
+        width: 150px;
+        bottom:-1rem;
+        right: -6rem;
     }
 
-    .center-links {
-        margin-top: 8em;
+    .nav-links {
+        margin-top: 15rem;
         gap: 2rem;
     }
 
-    .center-links a {
+    .nav-links a {
         font-size: 3.5em;
     }   
-}
-
-
-/**IPHONE SCREEN - HOME **/
-@media screen and (max-width: 600px) {
-    .hstar-top {
-        width: 125px;
-        top: 0;
-        left: -10px;
-    }
-
-    .hstar-bottom {
-        width: 95px;
-        bottom: 20px;
-        right: 5px;
-    }
-
-    .center-links {
-        margin-top: 8em;
-        gap: 2rem;
-    }
-
-    .center-links a {
-        font-size: 2rem;
-    }
 }
