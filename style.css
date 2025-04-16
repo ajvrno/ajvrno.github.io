@@ -461,10 +461,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    .about-container {
-        padding: 1rem;
-    }
-
     .profile-section {
         flex: 0 0 250px;
         max-width: 250px;
