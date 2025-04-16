@@ -32,16 +32,14 @@ a:active {
 }
 
 /********* INDEX *********/
-.container {
+.index-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding: 2rem;
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 2rem;
 }
 
 .index-center {
@@ -60,14 +58,14 @@ a:active {
 .star-top {
     position: absolute;
     top: 1rem;
-    left: -5rem;
+    left: 8rem;
     width: clamp(100px, 15vw, 150px);
 }
 
 .star-bottom {
     position: absolute;
     bottom: -1rem;
-    right: -8rem;
+    right: 6rem;
     width: clamp(90px, 20vw, 200px);
 }
 
@@ -104,19 +102,49 @@ footer {
     50% { border-color: #333333 }
 }
 
+/* MOBILE RESPONSIVENESS - INDEX PAGE */
+@media screen and (max-width: 768px) {
+    .index-h1 {
+        font-size: 40px;
+    }
+
+    .click-here {
+        font-size: 40px;
+    }
+
+    .star-top {
+        left: -0.25rem;
+    }
+
+    .star-bottom {
+        right: 1rem;
+        bottom: 2rem;
+    }
+}
+
 /********* HOME *********/
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 15rem;
+    z-index: 1;
+}
+
 .hstar-top {
     position: absolute;
-    top: -1rem;
-    left: -28rem;
-    width: clamp(60px, 15vw, 250px);
+    top: 0rem;
+    left: 1rem;
+    width: clamp(100px, 15vw, 150px);
 }
 
 .hstar-bottom {
     position: absolute;
-    bottom: -13rem;
-    right: -29rem;
-    width: clamp(80px, 20vw, 200px);
+    bottom: -1rem;
+    right: 1rem;
+    width: clamp(90px, 20vw, 200px);
 }
 
 .h-center {
@@ -124,12 +152,19 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 15rem;
 }
 
 .nav-links {
     display: flex;
     gap: 4rem;
+}
+
+.nav-links a {
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .button-links {
@@ -256,7 +291,7 @@ footer {
     font-size: 0.875rem;
 }
 
-/* MOBILE RESPONSIVENESS */
+/* MOBILE RESPONSIVENESS - EXPERIENCE PAGE */
 @media screen and (max-width: 768px) {
     .exp-container {
         padding: 1.5rem;
