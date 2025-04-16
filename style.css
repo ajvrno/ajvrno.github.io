@@ -451,6 +451,10 @@ footer {
         margin: 0 auto;
     }
 
+    .text-section {
+        padding: 0;
+    }
+
     .navigation {
         gap: 2rem;
     }
