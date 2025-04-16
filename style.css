@@ -47,7 +47,7 @@ a:active {
 .index-center {
     text-align: justify;
     max-width: 960px;
-    margin-top: 5rem;
+    margin-top: 4rem;
     z-index: 1;
 }
 
@@ -66,8 +66,8 @@ a:active {
 
 .star-bottom {
     position: absolute;
-    bottom: 1rem;
-    right: -7rem;
+    bottom: -1rem;
+    right: -8rem;
     width: clamp(90px, 20vw, 200px);
 }
 
@@ -104,39 +104,18 @@ footer {
     50% { border-color: #333333 }
 }
 
-/** MOBILE RESPONSIVENESS **/
-@media screen and (max-width: 992px) {
-    .index-h1 {     
-        font-size: 40px;
-    }
-
-    a {     
-        font-size: 40px;
-    }
-
-    .star-top {
-        top: 2rem;
-        left: -0.5rem;
-    }
-
-    .star-bottom {
-        bottom: 2.5rem;
-        right: -1rem;
-    }
-} 
-
 /********* HOME *********/
 .hstar-top {
     position: absolute;
-    top: 1rem;
-    left: -30rem;
+    top: -1rem;
+    left: -28rem;
     width: clamp(60px, 15vw, 250px);
 }
 
 .hstar-bottom {
     position: absolute;
-    bottom: -2.5rem;
-    right: -28rem;
+    bottom: -13rem;
+    right: -29rem;
     width: clamp(80px, 20vw, 200px);
 }
 
@@ -145,11 +124,11 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin-top: 15rem;
 }
 
 .nav-links {
     display: flex;
-    margin-top: 13rem;
     gap: 4rem;
 }
 
@@ -171,28 +150,4 @@ footer {
     padding: 1rem;
     font-size: 0.875rem;
     color: #333333;
-}
-
-/** HALF/TABLET SCREEN - HOME **/
-@media screen and (max-width: 992px) {
-    .hstar-top {
-        width: 125px;
-        top: 1rem;
-        left: -0.5rem;
-    }
-
-    .hstar-bottom {
-        width: 100px;
-        bottom: -5rem;
-        right: -0.1rem;
-    }
-
-    .nav-links {
-        margin-top: 12rem;
-        gap: 2rem;
-    }
-
-    .nav-links a {
-        font-size: 3.5em;
-    }   
 }
