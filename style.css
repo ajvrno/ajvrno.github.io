@@ -46,7 +46,6 @@ a:active {
     text-align: justify;
     max-width: 960px;
     margin-top: 4rem;
-    z-index: 1;
 }
 
 .index-h1 {
@@ -105,19 +104,19 @@ footer {
 /* MOBILE RESPONSIVENESS - INDEX PAGE */
 @media screen and (max-width: 768px) {
     .index-h1 {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .click-here {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .star-top {
-        left: -0.25rem;
+        left: -0.5rem;
     }
 
     .star-bottom {
-        right: 1rem;
+        right: -0.25rem;
         bottom: 2rem;
     }
 }
