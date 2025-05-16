@@ -87,7 +87,7 @@ footer {
     overflow: hidden;
     border-right: 2px solid #333333;
     white-space: nowrap;
-    animation: typing 0.75s steps(13) 0.75s forwards,
+    animation: typing 0.75s steps(14) 0.75s forwards,
              blink-caret 0.75s step-end infinite;
 }
 
@@ -102,28 +102,55 @@ footer {
 }
 
 /* MOBILE RESPONSIVENESS - INDEX PAGE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
     .index-container {
         margin-top: 4rem;
     }
 
     .index-h1 {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .click-here {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .star-top {
-        left: -0.75rem;
+        top: -3rem;
+        left: -0.25rem;
+    }
+
+    .star-bottom {
+        right: -0.5rem;
+        bottom: -3rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    .index-h1 {
+        font-size: 31px;
+    }
+
+    .click-here {
+        font-size: 31px;
+    }
+
+    .star-top {
+        top: -0.75rem;
+        left: -0.25rem;
     }
 
     .star-bottom {
         right: -0.25rem;
-        bottom: 2rem;
+        bottom: 0.5rem;
     }
 }
+
 
 /********* HOME *********/
 .home-container {
@@ -132,21 +159,22 @@ footer {
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin-top: 15rem;
     z-index: 1;
 }
 
 .hstar-top {
     position: absolute;
-    top: 0rem;
-    left: 1rem;
+    top: 1rem;
+    right: 2rem;
+    transform: rotate(90deg);
     width: clamp(100px, 15vw, 150px);
 }
 
 .hstar-bottom {
     position: absolute;
-    bottom: -1rem;
-    right: 1rem;
+    bottom: 2rem;
+    left: 0.25rem; 
+    transform: rotate(200deg);
     width: clamp(90px, 20vw, 200px);
 }
 
@@ -154,12 +182,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 13rem;
 }
 
 .nav-links {
     display: flex;
-    gap: 4rem;
+    margin-top: 17rem;
+    gap: 9rem;
 }
 
 .nav-links a {
@@ -191,11 +220,34 @@ footer {
 }
 
 /* MOBILE RESPONSIVENESS - HOME PAGE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
     .nav-links a {
-        font-size: 40px;
+        font-size: 50px;
     }
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .nav-links {
+        gap: 4rem;
+    }
+    .nav-links a {
+        font-size: 35px;
+    }
+
+    .hstar-top {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .hstar-bottom {
+        left: 0.25rem;
+    }
+  }
 
 /********* EXPERIENCE *********/
 .exp-container {
@@ -301,7 +353,7 @@ footer {
 }
 
 /* MOBILE RESPONSIVENESS - EXPERIENCE PAGE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
     .exp-container {
         padding: 1.5rem;
     }
@@ -331,7 +383,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
     .container {
         padding: 1rem;
     }
@@ -362,10 +418,10 @@ footer {
     flex: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .content-wrapper {
@@ -396,10 +452,11 @@ footer {
 
 .floating-stars {
     position: absolute;
-    top: -50px;
-    right: -100px;
+    top: -3rem;
+    right: -4.5rem;
     width: 120px;
-    z-index: 2;
+    z-index: 1;
+    transform: rotate(90deg);
 }
 
 .floating-stars img {
@@ -441,7 +498,11 @@ footer {
 }
 
 /* MOBILE RESPONSIVENESS - ABOUT PAGE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
+    .about-container {
+        padding: 2rem;
+    }
+
     .content-wrapper {
         flex-direction: column;
         text-align: center;
@@ -457,16 +518,20 @@ footer {
         padding: 0;
     }
 
-    .navigation {
-        gap: 2rem;
-    }
-
     .navigation a {
         font-size: 1.5rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .about-container {
+        padding: 2rem;
+    }
+
     .profile-section {
         flex: 0 0 250px;
         max-width: 250px;
@@ -486,5 +551,9 @@ footer {
 
     .navigation a {
         font-size: 1.25rem;
+    }
+
+    .floating-stars {
+        right: -4.5rem;
     }
 } 
