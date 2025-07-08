@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-span {
+.link {
     font-size: 3.5rem;
     font-style: italic;
     font-weight: 600;
@@ -23,12 +23,12 @@ span {
     transition: color 0.3s ease;
 }
 
-span:hover {
+.link:hover {
     color: #5D3E87;
     cursor: pointer;
 }
 
-span:active {
+.link:active {
     color: #A47CD8;
 }
 
@@ -128,10 +128,6 @@ footer {
     }
 
     .index-h1 , .click-here, .typing-text {
-        font-size: 45px;
-    }
-
-    .click-here {
         font-size: 45px;
     }
 
@@ -241,7 +237,7 @@ footer {
 
 /* MOBILE RESPONSIVENESS - HOME PAGE */
 @media screen and (max-width: 812px) {
-    .nav-links a {
+    .nav-links span {
         font-size: 50px;
     }
 }
@@ -502,7 +498,7 @@ footer {
     font-style: italic;
 }
 
-.description, .contact {
+.description, .contact, .email {
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: justify;
@@ -512,7 +508,7 @@ footer {
     cursor: pointer;   
 }
 
-.highlight, .email {
+.highlight {
     font-style: italic;
     font-weight: 600;
 }
