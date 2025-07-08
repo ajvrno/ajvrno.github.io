@@ -127,7 +127,7 @@ footer {
         margin-top: 4rem;
     }
 
-    .index-container span {
+    .index-h1, .index-container span {
         font-size: 45px;
     }
 
@@ -148,7 +148,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
 
-    .index-container span {
+    .index-h1, .index-container span {
         font-size: 31px;
     }
 
