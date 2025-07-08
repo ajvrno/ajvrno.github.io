@@ -127,7 +127,7 @@ footer {
         margin-top: 4rem;
     }
 
-    .index-h1 {
+    .index-h1 , .click-here, .typing-text {
         font-size: 45px;
     }
 
