@@ -125,9 +125,6 @@ footer {
 @media screen and (max-width: 812px) {
     .index-container {
         margin-top: 4rem;
-    }
-
-    .index-h1 , .click-here, .typing-text {
         font-size: 45px;
     }
 
@@ -148,11 +145,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
 
-    .index-h1 {
-        font-size: 31px;
-    }
-
-    .click-here {
+    .index-container {
         font-size: 31px;
     }
 
@@ -498,7 +491,7 @@ footer {
     font-style: italic;
 }
 
-.description, .contact, .email {
+.description, .contact {
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: justify;
