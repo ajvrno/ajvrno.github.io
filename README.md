@@ -4,4 +4,4 @@
 
 # NOTES:
 
-07/08/2025 - swipe transition is stuck when you press the back button, need to fix that so its not confusing
+07/08/2025 - swipe transition is stuck when you press the back button, need to fix that so its not confusing. also, stars on index page aren't very web responsive
