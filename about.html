@@ -7,12 +7,14 @@
 
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" href="favicon.png">
-
-        <script src = "js/home.js"></script>
+        
+        <script src="script.js"></script>
     </head>
+
     <body>
         <main class="about-container">
             <div class="content-wrapper">
+                <!-- PROFILE PICTURE -->
                 <div class="profile-section">
                     <div class="profile-image">
                         <img src="/pictures/HEADSHOT.JPG" alt="profile placeholder" />
@@ -21,29 +23,29 @@
                         <img src="/pictures/transparent purple stars.png" alt="decorative stars" class="stars" />
                     </div>
                 </div>
-                
+
+                <!-- DESCRIPTION -->
                 <div class="text-section">
-                    <h1 class="title">hey, i'm <span class="name">ashley</span>!</h1>
+                    <h1 class="title">hey, i'm <em class="name">ashley</em>!</h1>
                     
                     <p class="description">
-                        i'm a current junior computer science student at University of Maryland, Baltimore County. i'm a creatively driven and curious person and i'm always looking to challenge what i already know. my current areas of interest include <span class="highlight">front-end development</span> and <span class="highlight">cybersecurity</span>. beyond academics, i enjoy reading (currently: the catcher in the rye), nerding out over star wars and marvel, and doing anything artsy!
-                    </p>
-                    
-                    <p class="contact">
-                        if you'd like to learn more about me, feel free to explore my projects below, check out my <a class="contact" href="https://www.linkedin.com/in/ajvrabino/">linkedin</a>, or contact me at <span class="email">arabino1@umbc.edu</span>!
+                        i'm a current junior computer science student at University of Maryland, Baltimore County. i'm a creatively driven and curious person and i'm always looking to challenge what i already know. my current areas of interest include <em class="highlight">front-end development</em> and <em class="highlight">cybersecurity</em>
+                        if you'd like to learn more about me, feel free to explore my projects below, check out my <span class="contact" href="https://www.linkedin.com/in/ajvrabino/">linkedin</span>, or contact me at <em class="email">arabino1@umbc.edu</em>!
                     </p>
                 </div>
             </div>
 
             <nav class="bottom-nav">
-                <a href="home.html">home</a>
-                <a href="about.html" class="active">about</a>
-                <a href="projects.html">projects</a>
+                <span class="nav-link" data-href="home.html">home</span>
+                <span class="nav-link" data-href="about.html">about</span>
+                <span class="nav-link" data-href="projects.html">experience</span>
             </nav>
         </main>
+        <div id="wipe-overlay"></div>
 
+        <!-- COPYRIGHT -->
         <footer>
-            <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small>
+            <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small></footer>
         </footer>
     </body>
 </html>

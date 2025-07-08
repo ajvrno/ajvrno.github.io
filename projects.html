@@ -7,7 +7,10 @@
 
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" href="favicon.png">
+        
+        <script src="script.js"></script>
     </head>
+
     <body>
         <main class="exp-container">
             <h1 class="exp-h1">
@@ -21,12 +24,12 @@
                     <div class="card-content">
                         <h2 class="project-title">OutTheGC</h2>
                         <a href="https://github.com/ajvrno/OutTheGC" class="github-link">
-                            <img src="/pictures/github.png" alt="GitHub" width="30" height="30">
+                            <img src="/pictures/github.png" alt="GitHub page to project" width="40" height="40">
                         </a>
                         <p class="project-description">
                                 a collaborative event planning web application that helps friend groups follow through with plans - finally getting them <em>out the group chat.</em>  implemented google and gemini api.
                             </p>
-                        <p class="tech-stack">Next.js, Tailwind CSS, Firebase</p>
+                        <p class="tech-stack">Next.js, Tailwind CSS, Firebase, Gemini API</p>
                     </div>
                 </div>
 
@@ -35,7 +38,7 @@
                     <div class="card-content">
                         <h2 class="project-title">Student Queue System</h2>
                         <a href="https://github.com/ajvrno/Student-Queue-System" class="github-link">
-                            <img src="/pictures/github.png" alt="GitHub" width="30" height="30">
+                            <img src="/pictures/github.png" alt="GitHub page to project" width="40" height="40">
                         </a>
                         <p class="project-description">
                             class project that implements a priority queue system to manage a student database using skew and leftist heaps, showcasing knowledge in data structures.
@@ -49,7 +52,7 @@
                     <div class="card-content">
                         <h2 class="project-title">CHIP-8 Emulator</h2>
                         <a href="https://github.com/ajvrno/" class="github-link">
-                            <img src="/pictures/github.png" alt="GitHub" width="30" height="30">
+                            <img src="/pictures/github.png" alt="GitHub page to project" width="40" height="40">
                         </a>
                         <p class="project-description">
                             a CHIP-8 emulator that implements all instructions of the original CHIP-8, as well as features such as input and video/sound output.
@@ -63,7 +66,7 @@
                     <div class="card-content">
                         <h2 class="project-title">this website!</h2>
                         <a href="https://github.com/ajvrno/ajvrno.github.io" class="github-link">
-                            <img src="/pictures/github.png" alt="GitHub" width="30" height="30">
+                            <img src="/pictures/github.png" alt="GitHub page to project" width="40" height="40">
                         </a>
                         <p class="project-description">
                             personal website showcasing my projects and experiences as well as my front-end development skills.
@@ -74,14 +77,16 @@
             </div>
 
             <nav class="bottom-nav">
-                <a href="home.html">home</a>
-                <a href="about.html">about</a>
-                <a href="projects.html" class="active">projects</a>
+                <span class="nav-link" data-href="home.html">home</span>
+                <span class="nav-link" data-href="about.html">about</span>
+                <span class="nav-link" data-href="projects.html">projects</span>
             </nav>
-
-            <footer>
-                <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small>
-            </footer>
         </main>
+        <div id="wipe-overlay"></div>
+        
+        <!-- COPYRIGHT -->
+        <footer>
+            <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small></footer>
+        </footer>
     </body>
 </html>

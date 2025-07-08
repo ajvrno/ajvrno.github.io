@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" href="favicon.png">
 
-  <script src = "js/home.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,17 +18,17 @@
     </div>
 
     <div class="h-center">
-      <nav class="nav-links">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-      </nav>
+      <div class="nav-links">
+        <span class="nav-link" data-href="about.html">about</span>
+        <span class="nav-link" data-href="projects.html">experience</span>
+      </div>
 
       <nav class="button-links">
-        <a href="https://www.linkedin.com/in/ajvrabino" target="_blank" rel="noopener noreferrer">
-          <img width="35" height="35" src="/pictures/linkedin.png" alt="linkedin">
+          <a href="https://www.linkedin.com/in/ajvrabino" target="_blank" rel="noopener noreferrer">
+          <img width="45" height="45" src="/pictures/linkedin.png" alt="My LinkedIn">
         </a>
         <a href="https://www.github.com/ajvrno" target="_blank" rel="noopener noreferrer">
-          <img width="35" height="35" src="/pictures/github.png" alt="github">
+          <img width="45" height="45" src="/pictures/github.png" alt="My GitHub">
         </a>
       </nav>
     </div>
@@ -37,10 +37,11 @@
       <img src="/pictures/transparent purple 1 star.png" class="star" alt="purple-star">
     </div>
   </main>
+  <div id="wipe-overlay"></div>
   
   <!-- COPYRIGHT -->
   <footer>
-    <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small></footer>
+      <small>© <script>document.write(new Date().getFullYear())</script> ashley rabino.</small></footer>
   </footer>
 </body> 
 </html>
