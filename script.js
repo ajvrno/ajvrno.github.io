@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.add('active');
         setTimeout(() => {
           window.location.href = link.getAttribute('data-href');
-        }, 700); // Match the CSS transition duration
+        }, 700);
       }
     });
   });
