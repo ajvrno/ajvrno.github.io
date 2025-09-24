@@ -1,7 +1,7 @@
 # Personal Website - ajvrno.github.io
 
-## Using HTML, CSS, and JavaScript
+using HTML, CSS, and JavaScript
 
-# NOTES:
+## NOTES
 
-07/08/2025 - swipe transition is stuck when you press the back button, need to fix that so its not confusing. also, stars on index page aren't very web responsive
+07/08/2025 - swipe transition is stuck when you press the back button, need to fix that so its not confusing. also, work is to be made on mobile responsiveness
