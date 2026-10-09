@@ -15,7 +15,9 @@ export default function Home() {
           <WipeLink to="/about">about</WipeLink>
           <WipeLink to="/projects">projects</WipeLink>
         </div>
+      </div>
 
+      <div className="buttons">
         <nav className="button-links">
           <a href="https://www.linkedin.com/in/ajvrabino" target="_blank" rel="noopener noreferrer">
             <img width="45" height="45" src="/linkedin.png" alt="linkedin.com/in/ajvrabino" />

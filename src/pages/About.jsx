@@ -25,9 +25,9 @@ export default function About() {
 
           <p className="description">
             i'm a recent computer science graduate from University of Maryland, Baltimore
-            County. i'm a creatively driven and curious person and i'm always looking to challenge
+            County. i'm a creatively-driven and curious person, and i'm always looking to challenge
             what i already know. my current areas of interest include{' '}
-            <em className="highlight">fullstack development</em> and{' '}
+            <em className="highlight">full-stack development</em> and{' '}
             <em className="highlight">cybersecurity</em>. if you'd like to learn
             more about me, feel free to explore my projects below, check out my{' '}
             <a
