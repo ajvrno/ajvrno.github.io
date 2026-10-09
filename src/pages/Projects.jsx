@@ -53,7 +53,7 @@ export default function Projects() {
             <div className="card-content">
               <h2 className="project-title">{p.title}</h2>
               <a href={p.url} className="github-link" target="_blank" rel="noopener noreferrer">
-                <img src="/public/github.png" alt={`${p.title} on GitHub`} width="40" height="40" />
+                <img src="/github.png" alt={`${p.title} on GitHub`} width="40" height="40" />
               </a>
               <p className="project-description">{p.description}</p>
               <p className="tech-stack">{p.stack}</p>
