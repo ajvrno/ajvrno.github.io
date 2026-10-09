@@ -141,43 +141,18 @@ footer {
 
 /* MOBILE RESPONSIVENESS - INDEX PAGE */
 @media screen and (max-width: 812px) {
-    .index-container {
-        margin-top: 4rem;
-    }
-
     .index-h1, .index-container span {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .star-top {
-        top: -3rem;
+        top: 1rem;
         left: -0.25rem;
     }
 
     .star-bottom {
         right: -0.5rem;
-        bottom: -3rem;
-    }
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-    .index-h1, .index-container span {
-        font-size: 31px;
-    }
-
-    .star-top {
-        top: -0.75rem;
-        left: -0.25rem;
-    }
-
-    .star-bottom {
-        right: -0.25rem;
-        bottom: 0.5rem;
+        bottom: -4rem;
     }
 }
 
@@ -256,18 +231,9 @@ footer {
 
 /* MOBILE RESPONSIVENESS - HOME PAGE */
 @media screen and (max-width: 812px) {
-    .nav-links span {
-        font-size: 50px;
-    }
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-
     .nav-links {
+        margin-top: 18rem;
+        margin-bottom: 4rem;
         gap: 4rem;
     }
     .nav-links span {
@@ -282,7 +248,12 @@ footer {
     .hstar-bottom {
         left: 0.25rem;
     }
-  }
+
+    .button-links img {
+        width: 35px;
+        height: 35px;
+    }
+}
 
 /********* EXPERIENCE *********/
 .exp-container {
@@ -407,7 +378,7 @@ footer {
     }
 
     .my, .experience {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .projects-grid {
@@ -419,22 +390,8 @@ footer {
         padding: 1.5rem;
     }
 
-    .bottom-nav {
-        gap: 2rem;
-    }
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
     .container {
         padding: 1rem;
-    }
-
-    .my, .experience {
-        font-size: 2.5rem;
     }
 
     .project-title {
@@ -445,14 +402,14 @@ footer {
         font-size: 1rem;
     }
 
-    .bottom-nav {
-        gap: 1.5rem;
-    }
-
     .bottom-nav span {
         font-size: 1rem;
     }
-} 
+
+    .info {
+        font-size: 0.9rem;
+    }
+}
 
 /********* ABOUT *********/
 .about-container {
@@ -541,32 +498,16 @@ footer {
 /* MOBILE RESPONSIVENESS - ABOUT PAGE */
 @media screen and (max-width: 812px) {
     .about-container {
-        padding: 2rem;
+        margin-top: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
     .content-wrapper {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
-    }
-
-    .profile-section {
-        flex: 0 0 300px;
-        max-width: 300px;
-    }
-
-    .text-section {
-        padding: 0;
-    }
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-    .about-container {
-        padding: 2rem;
+        margin-bottom: 0;
     }
 
     .profile-section {
@@ -574,15 +515,21 @@ footer {
         max-width: 250px;
     }
 
+    .text-section {
+        padding: 0;
+        
+    }
+
     .title {
         font-size: 2.5rem;
     }
 
     .description, .contact {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .floating-stars {
-        right: -4.5rem;
+        right: -4rem;
+        top: -5rem;
     }
-} 
+}
