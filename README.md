@@ -1,16 +1,6 @@
-# React + Vite
+# Personal Website - ajvrno.github.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## NOTES
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+10/09/2026 - switched from vanilla html/css/js to a react interface; created gh actions build file to deploy on ghp
+07/08/2025 - swipe transition is stuck when you press the back button, need to fix that so its not confusing. also, work is to be made on mobile responsiveness
