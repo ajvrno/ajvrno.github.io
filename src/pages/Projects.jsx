@@ -41,28 +41,28 @@ export default function Projects() {
   usePageTitle('experience | ashley rabino');
 
   return (
-    <main className="exp-container">
-      <h1 className="exp-h1">
-        <span className="my">my</span>
-        <span className="experience">projects</span>
+    <main className="mx-auto w-full max-w-[1200px] flex-1 p-8 max-[812px]:p-6">
+      <h1 className="mb-12 flex items-center justify-between font-semibold max-[812px]:mb-8 max-[812px]:flex-col max-[812px]:items-start max-[812px]:gap-2">
+        <span className="text-[4rem] max-[812px]:text-[2.5rem]">my</span>
+        <span className="text-[4rem] italic max-[812px]:text-[2.5rem]">projects</span>
       </h1>
 
-      <div className="projects-grid">
+      <div className="mb-12 grid grid-cols-2 gap-8 max-[812px]:grid-cols-1 max-[812px]:gap-6">
         {projects.map((p) => (
-          <div className="project-card" key={p.title}>
-            <div className="card-content">
-              <h2 className="project-title">{p.title}</h2>
-              <a href={p.url} className="github-link" target="_blank" rel="noopener noreferrer">
+          <div className="relative rounded-[20px] bg-lavender p-8 transition-[transform,box-shadow] duration-300 hover:-translate-y-2.5 hover:shadow-[0_10px_20px_rgba(51,51,51,0.75)] max-[812px]:p-6" key={p.title}>
+            <div className="relative">
+              <h2 className="mb-4 pr-10 text-2xl italic font-semibold max-[812px]:text-xl">{p.title}</h2>
+              <a href={p.url} className="absolute right-0 top-[-0.5rem] transition-opacity duration-300 hover:opacity-80" target="_blank" rel="noopener noreferrer">
                 <img src="/github.png" alt={`${p.title} on GitHub`} width="40" height="40" />
               </a>
-              <p className="project-description">{p.description}</p>
-              <p className="tech-stack">{p.stack}</p>
+              <p className="p-5 text-[1.2rem] leading-[1.5] max-[812px]:text-base">{p.description}</p>
+              <p className="p-5 text-[1.1rem]">{p.stack}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <p className="info">and more! click the github icon to view repositories</p>
+      <p className="mb-12 flex justify-center max-[812px]:text-[0.9rem]">and more! click the github icon to view repositories</p>
 
       <BottomNav />
     </main>

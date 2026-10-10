@@ -24,7 +24,7 @@ export default function App() {
 
       <WipeOverlay />
 
-      <footer>
+      <footer className="mt-auto p-4 text-center text-sm">
         <small>© {new Date().getFullYear()} ashley rabino.</small>
       </footer>
     </WipeProvider>

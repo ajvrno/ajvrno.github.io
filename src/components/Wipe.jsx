@@ -6,7 +6,7 @@ const WipeContext = createContext(null);
 
 export const useWipe = () => useContext(WipeContext);
 
-// phase: 'idle' -> 'cover' (purple slides in) -> route changes -> 'reveal' (slides out) -> 'idle'
+// phase: 'idle' -> 'cover' (purple slides up) -> route changes -> 'reveal' (slides out) -> 'idle'
 export function WipeProvider({ children }) {
   const navigate = useNavigate();
   const [phase, setPhase] = useState('idle');
@@ -37,5 +37,11 @@ export function WipeProvider({ children }) {
 
 export function WipeOverlay() {
   const { phase } = useWipe();
-  return <div id="wipe-overlay" className={phase} />;
+  const animationClass = phase === 'cover' ? 'wipe-cover' : phase === 'reveal' ? 'wipe-reveal' : '';
+  return (
+    <div
+      id="wipe-overlay"
+      className={`wipe-overlay pointer-events-none fixed inset-x-0 bottom-0 z-[9999] h-screen w-screen bg-wisteria ${animationClass}`}
+    />
+  );
 }
